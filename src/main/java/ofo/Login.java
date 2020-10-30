@@ -42,6 +42,7 @@ public class Login extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(25000, 25000));
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
         jPanel1.setVerifyInputWhenFocusTarget(false);
@@ -80,6 +81,11 @@ public class Login extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Sign in");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(249, 187, 10));
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
@@ -196,6 +202,12 @@ public class Login extends javax.swing.JFrame {
         Registration registration = new Registration();
         registration.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        MainMenu mm = new MainMenu();
+        mm.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
