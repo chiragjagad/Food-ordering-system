@@ -355,9 +355,9 @@ public class Registration extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "Dkj24/03");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodorderingsystem?user=root&password=Dkj24/03");
             
-            String sql = "insert into user values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "insert into user_table values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username.getText());
             pstmt.setString(2, password.getText());
@@ -366,9 +366,9 @@ public class Registration extends javax.swing.JFrame {
             pstmt.setString(5, address.getText());
             pstmt.setInt(6, Integer.parseInt(pincode.getText()));
             pstmt.setInt(7, Integer.parseInt(contact_no.getText()));
-            pstmt.setDate(8, (Date) new SimpleDateFormat("dd/MM/yyyy").parse(dob.getText()));
+            pstmt.setString(8, dob.getText());
             pstmt.setString(9, state.getText());
-            pstmt.setString(9, city.getText());
+            pstmt.setString(10, city.getText());
             
             pstmt.executeUpdate();
             JOptionPane.showMessageDialog(null, "Registeration successful");
