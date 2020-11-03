@@ -34,7 +34,7 @@ public class Order extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        ordertable = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
@@ -60,7 +60,7 @@ public class Order extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Imprint MT Shadow", 1, 48)); // NOI18N
         jLabel1.setText("Order Details");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        ordertable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -91,15 +91,15 @@ public class Order extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.setRowHeight(32);
-        jScrollPane2.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(1).setMinWidth(100);
-            jTable1.getColumnModel().getColumn(1).setMaxWidth(100);
-            jTable1.getColumnModel().getColumn(2).setMinWidth(150);
-            jTable1.getColumnModel().getColumn(2).setMaxWidth(150);
-            jTable1.getColumnModel().getColumn(3).setMinWidth(150);
-            jTable1.getColumnModel().getColumn(3).setMaxWidth(150);
+        ordertable.setRowHeight(32);
+        jScrollPane2.setViewportView(ordertable);
+        if (ordertable.getColumnModel().getColumnCount() > 0) {
+            ordertable.getColumnModel().getColumn(1).setMinWidth(100);
+            ordertable.getColumnModel().getColumn(1).setMaxWidth(100);
+            ordertable.getColumnModel().getColumn(2).setMinWidth(150);
+            ordertable.getColumnModel().getColumn(2).setMaxWidth(150);
+            ordertable.getColumnModel().getColumn(3).setMinWidth(150);
+            ordertable.getColumnModel().getColumn(3).setMaxWidth(150);
         }
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -112,9 +112,9 @@ public class Order extends javax.swing.JFrame {
                         .addGap(404, 404, 404)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
+                        .addGap(33, 33, 33)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -276,6 +276,6 @@ public class Order extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable ordertable;
     // End of variables declaration//GEN-END:variables
 }
