@@ -167,7 +167,7 @@
             <Component class="javax.swing.JTextField" name="username">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="12" style="0"/>
+                  <Font name="Calisto MT" size="18" style="0"/>
                 </Property>
               </Properties>
               <Events>
@@ -177,7 +177,7 @@
             <Component class="javax.swing.JPasswordField" name="password">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Times New Roman" size="12" style="0"/>
+                  <Font name="Calisto MT" size="18" style="0"/>
                 </Property>
               </Properties>
               <Events>

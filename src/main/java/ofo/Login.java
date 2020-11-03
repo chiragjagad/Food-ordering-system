@@ -5,6 +5,11 @@
  */
 package ofo;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 import models.User;
 
 /**
@@ -57,14 +62,14 @@ public class Login extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/User-icon.png"))); // NOI18N
 
-        username.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        username.setFont(new java.awt.Font("Calisto MT", 0, 18)); // NOI18N
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
             }
         });
 
-        password.setFont(new java.awt.Font("Times New Roman", 0, 12)); // NOI18N
+        password.setFont(new java.awt.Font("Calisto MT", 0, 18)); // NOI18N
         password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passwordActionPerformed(evt);
@@ -192,7 +197,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
-        // TODO add your handling code here:
+        
     }//GEN-LAST:event_usernameActionPerformed
 
     private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
@@ -207,12 +212,32 @@ public class Login extends javax.swing.JFrame {
 
     private void LoginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginBtnActionPerformed
         // TODO add your handling code here:
-        String username = this.username.getText();
-        User user = new User(username);
+        String name = this.username.getText();
+        User user = new User(name);
         MainMenu.user = user;
-
-        MainMenu mm = new MainMenu();
-        mm.setVisible(true);
+        
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodorderingsystem?user=root&password=Dkj24/03");
+            String sql = "Select username, password from user_table where username=? and password=?";
+            PreparedStatement pstm = conn.prepareStatement(sql);
+            pstm.setString(1, username.getText());
+            pstm.setString(2, password.getText());
+            ResultSet rs= pstm.executeQuery();
+            if(rs.next()){
+                JOptionPane.showMessageDialog(null,"Login successful");
+                MainMenu mm = new MainMenu();
+                mm.setVisible(true);
+            } else{
+                JOptionPane.showMessageDialog(null,"Username and Password do not match");
+                username.setText("");
+                password.setText("");
+            }
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,e);
+        }
+        
+        
     }//GEN-LAST:event_LoginBtnActionPerformed
 
     /**
