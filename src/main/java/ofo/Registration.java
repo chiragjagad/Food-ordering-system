@@ -6,10 +6,8 @@
 package ofo;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
 
 /**
@@ -365,7 +363,7 @@ public class Registration extends javax.swing.JFrame {
             pstmt.setString(4, email.getText());
             pstmt.setString(5, address.getText());
             pstmt.setInt(6, Integer.parseInt(pincode.getText()));
-            pstmt.setInt(7, Integer.parseInt(contact_no.getText()));
+            pstmt.setDouble(7, Double.parseDouble(contact_no.getText()));
             pstmt.setString(8, dob.getText());
             pstmt.setString(9, state.getText());
             pstmt.setString(10, city.getText());
