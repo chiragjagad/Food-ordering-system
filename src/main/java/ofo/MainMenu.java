@@ -696,12 +696,32 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel16.setText("jLabel1");
 
         pancakesO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        pancakesO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pancakesOActionPerformed(evt);
+            }
+        });
 
         cheesecakeO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        cheesecakeO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cheesecakeOActionPerformed(evt);
+            }
+        });
 
         rasgullaO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        rasgullaO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rasgullaOActionPerformed(evt);
+            }
+        });
 
         waffleO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        waffleO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                waffleOActionPerformed(evt);
+            }
+        });
 
         jLabel36.setFont(new java.awt.Font("Imprint MT Shadow", 1, 48)); // NOI18N
         jLabel36.setText("PANCAKES");
@@ -933,12 +953,32 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel12.setText("jLabel1");
 
         lemonadeO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        lemonadeO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                lemonadeOActionPerformed(evt);
+            }
+        });
 
         pinacoladaO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        pinacoladaO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pinacoladaOActionPerformed(evt);
+            }
+        });
 
         msO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        msO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                msOActionPerformed(evt);
+            }
+        });
 
         pepsiO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ofo/cart.png"))); // NOI18N
+        pepsiO.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pepsiOActionPerformed(evt);
+            }
+        });
 
         jLabel29.setFont(new java.awt.Font("Imprint MT Shadow", 1, 48)); // NOI18N
         jLabel29.setText("LEMONADE");
@@ -1222,6 +1262,38 @@ public class MainMenu extends javax.swing.JFrame {
     private void pastaOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pastaOActionPerformed
         JOptionPane.showMessageDialog(null, "Pasta has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
     }//GEN-LAST:event_pastaOActionPerformed
+
+    private void pancakesOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pancakesOActionPerformed
+        JOptionPane.showMessageDialog(null, "Pancakes has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_pancakesOActionPerformed
+
+    private void waffleOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_waffleOActionPerformed
+        JOptionPane.showMessageDialog(null, "Waffle has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_waffleOActionPerformed
+
+    private void cheesecakeOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheesecakeOActionPerformed
+        JOptionPane.showMessageDialog(null, "Cheesecake has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_cheesecakeOActionPerformed
+
+    private void rasgullaOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rasgullaOActionPerformed
+        JOptionPane.showMessageDialog(null, "Rasgulla has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_rasgullaOActionPerformed
+
+    private void lemonadeOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lemonadeOActionPerformed
+        JOptionPane.showMessageDialog(null, "Lemonade has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_lemonadeOActionPerformed
+
+    private void pinacoladaOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pinacoladaOActionPerformed
+        JOptionPane.showMessageDialog(null, "Pinacolada has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_pinacoladaOActionPerformed
+
+    private void msOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_msOActionPerformed
+        JOptionPane.showMessageDialog(null, "Milkshake has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_msOActionPerformed
+
+    private void pepsiOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pepsiOActionPerformed
+        JOptionPane.showMessageDialog(null, "Pepsi has been added to the cart", "Message", JOptionPane.PLAIN_MESSAGE);
+    }//GEN-LAST:event_pepsiOActionPerformed
 
     /**
      * @param args the command line arguments

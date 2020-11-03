@@ -5,6 +5,9 @@
  */
 package ofo;
 
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Chirag Jagad
@@ -16,6 +19,7 @@ public class Order extends javax.swing.JFrame {
      */
     public Order() {
         initComponents();
+        
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -127,12 +131,22 @@ public class Order extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Imprint MT Shadow", 0, 36)); // NOI18N
         jButton1.setText("ORDER");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jPanel4.setBackground(new java.awt.Color(255, 51, 51));
 
         jButton2.setBackground(new java.awt.Color(255, 255, 255));
         jButton2.setFont(new java.awt.Font("Imprint MT Shadow", 0, 36)); // NOI18N
         jButton2.setText("BACK");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -201,6 +215,22 @@ public class Order extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JDialog.setDefaultLookAndFeelDecorated(true);
+    int response = JOptionPane.showConfirmDialog(null, "Do you want to place the order?", "Confirmation",
+        JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+    if (response == JOptionPane.YES_OPTION) {
+      JOptionPane.showMessageDialog(null, "Your order has been successfully placed.","Message", JOptionPane.PLAIN_MESSAGE);
+    }  
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        MainMenu mm = new MainMenu();
+        mm.setVisible(true);
+        Order order = new Order();
+        order.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
