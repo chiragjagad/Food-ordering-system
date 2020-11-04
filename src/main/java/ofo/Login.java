@@ -218,7 +218,7 @@ public class Login extends javax.swing.JFrame {
         
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodorderingsystem?user=root&password=Dkj24/03");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodorderingsystem?user=root&password=chirag88");
             String sql = "Select username, password from user_table where username=? and password=?";
             PreparedStatement pstm = conn.prepareStatement(sql);
             pstm.setString(1, username.getText());
