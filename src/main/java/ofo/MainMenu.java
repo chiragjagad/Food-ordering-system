@@ -21,16 +21,20 @@ public class MainMenu extends javax.swing.JFrame {
 
     /**
      * Creates new form MainMenu
+     * 
      */
+
+    
+        
+    
     public MainMenu() {
-        initComponents();
+       initComponents();
        username.setText("Hello, \n" + user.getUsername() +"!");
        username1.setText("Hello, \n" + user.getUsername() +"!");
        username2.setText("Hello, \n" + user.getUsername() +"!");
        username3.setText("Hello, \n" + user.getUsername() +"!");
-
-
     }
+
     static User user;
 
 
@@ -282,8 +286,6 @@ public class MainMenu extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel49)
-                        .addGap(153, 153, 153)
-                        .addComponent(jLabel48)
                         .addContainerGap())
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -302,30 +304,38 @@ public class MainMenu extends javax.swing.JFrame {
                                 .addComponent(jLabel41)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(JSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 188, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel40)
-                                .addGap(76, 76, 76)
-                                .addComponent(jLabel42)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(JSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(55, 55, 55)
-                                        .addComponent(jLabel43))
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(JSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(204, 204, 204))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(251, 251, 251)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel40)
+                                        .addGap(65, 65, 65)
+                                        .addComponent(jLabel42)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(JSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel48))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(251, 251, 251))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(10, 10, 10)
+                                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(55, 55, 55)
+                                                .addComponent(jLabel43)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(JSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(204, 204, 204)))))
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -361,11 +371,11 @@ public class MainMenu extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel31)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel48)
-                        .addGap(18, 18, 18)
+                        .addGap(10, 10, 10)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel40)
                             .addComponent(jLabel42, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1057,21 +1067,6 @@ public class MainMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        
-        
-        
-        Order order = new Order();
-        order.setVisible(true);
-        
-    }//GEN-LAST:event_jButton28ActionPerformed
-
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
-        Order order = new Order();
-        order.setVisible(true);
-    }//GEN-LAST:event_jButton26ActionPerformed
-
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         int quantity[] = new int[16];
         String food_items[] = new String[16];
         int price[] = new int[16];
@@ -1126,22 +1121,230 @@ public class MainMenu extends javax.swing.JFrame {
         quantity[13] = (Integer) JSpinner14.getValue();
         quantity[14] = (Integer) JSpinner15.getValue();
         quantity[15] = (Integer) JSpinner16.getValue();
-    
-        for(int i=0; i<16; i++){
+        
+        Order order = new Order();
+        
+         for(int i=0; i<16; i++){
            if(quantity[i]>0){
                String data[]= {food_items[i], String.valueOf(price[i]), String.valueOf(quantity[i]), String.valueOf(price[i]*quantity[i])};
-               DefaultTableModel tblModel = (DefaultTableModel)ordertable.getmodel();
+               DefaultTableModel tblModel;
+               tblModel = (DefaultTableModel) order.ordertable.getModel();
                tblModel.addRow(data);
            } 
-        }
-    
+        }        
+        
+        order.setVisible(true);
+        
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        int quantity[] = new int[16];
+        String food_items[] = new String[16];
+        int price[] = new int[16];
+        
+        food_items[0] = "Nachos";
+        food_items[1] = "Dhokla";
+        food_items[2] = "Paneer Chilli";
+        food_items[3] = "Cheese Balls";
+        food_items[4] = "Pizza";
+        food_items[5] = "Pasta";
+        food_items[6] = "Tacos";
+        food_items[7] = "Burger";
+        food_items[8] = "Pancakes";
+        food_items[9] = "Cheesecake";
+        food_items[10] = "Waffle";
+        food_items[11] = "Rasgulla";
+        food_items[12] = "Lemonade";
+        food_items[13] = "Pinacolada";
+        food_items[14] = "Pepsi";
+        food_items[15] = "Milkshake";
+        
+        price[0] = 495;
+        price[1] = 250;
+        price[2] = 325;
+        price[3] = 280;
+        price[4] = 455;
+        price[5] = 435;
+        price[6] = 270;
+        price[7] = 165;
+        price[8] = 210;
+        price[9] = 260;
+        price[10] = 310;
+        price[11] = 145;
+        price[12] = 115;
+        price[13] = 120;
+        price[14] = 90;
+        price[15] = 160;        
+        
+        quantity[0] = (Integer) JSpinner1.getValue();
+        quantity[1] = (Integer) JSpinner2.getValue();
+        quantity[2] = (Integer) JSpinner3.getValue();
+        quantity[3] = (Integer) JSpinner4.getValue();
+        quantity[4] = (Integer) JSpinner5.getValue();
+        quantity[5] = (Integer) JSpinner6.getValue();
+        quantity[6] = (Integer) JSpinner7.getValue();
+        quantity[7] = (Integer) JSpinner8.getValue();
+        quantity[8] = (Integer) JSpinner9.getValue();
+        quantity[9] = (Integer) JSpinner10.getValue();
+        quantity[10] = (Integer) JSpinner11.getValue();
+        quantity[11] = (Integer) JSpinner12.getValue();
+        quantity[12] = (Integer) JSpinner13.getValue();
+        quantity[13] = (Integer) JSpinner14.getValue();
+        quantity[14] = (Integer) JSpinner15.getValue();
+        quantity[15] = (Integer) JSpinner16.getValue();
+        
         Order order = new Order();
+        
+         for(int i=0; i<16; i++){
+           if(quantity[i]>0){
+               String data[]= {food_items[i], String.valueOf(price[i]), String.valueOf(quantity[i]), String.valueOf(price[i]*quantity[i])};
+               DefaultTableModel tblModel;
+               tblModel = (DefaultTableModel) order.ordertable.getModel();
+               tblModel.addRow(data);
+           } 
+        }        
+        
+        order.setVisible(true);
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        
+        int quantity[] = new int[16];
+        String food_items[] = new String[16];
+        int price[] = new int[16];
+        
+        food_items[0] = "Nachos";
+        food_items[1] = "Dhokla";
+        food_items[2] = "Paneer Chilli";
+        food_items[3] = "Cheese Balls";
+        food_items[4] = "Pizza";
+        food_items[5] = "Pasta";
+        food_items[6] = "Tacos";
+        food_items[7] = "Burger";
+        food_items[8] = "Pancakes";
+        food_items[9] = "Cheesecake";
+        food_items[10] = "Waffle";
+        food_items[11] = "Rasgulla";
+        food_items[12] = "Lemonade";
+        food_items[13] = "Pinacolada";
+        food_items[14] = "Pepsi";
+        food_items[15] = "Milkshake";
+        
+        price[0] = 495;
+        price[1] = 250;
+        price[2] = 325;
+        price[3] = 280;
+        price[4] = 455;
+        price[5] = 435;
+        price[6] = 270;
+        price[7] = 165;
+        price[8] = 210;
+        price[9] = 260;
+        price[10] = 310;
+        price[11] = 145;
+        price[12] = 115;
+        price[13] = 120;
+        price[14] = 90;
+        price[15] = 160;        
+        
+        quantity[0] = (Integer) JSpinner1.getValue();
+        quantity[1] = (Integer) JSpinner2.getValue();
+        quantity[2] = (Integer) JSpinner3.getValue();
+        quantity[3] = (Integer) JSpinner4.getValue();
+        quantity[4] = (Integer) JSpinner5.getValue();
+        quantity[5] = (Integer) JSpinner6.getValue();
+        quantity[6] = (Integer) JSpinner7.getValue();
+        quantity[7] = (Integer) JSpinner8.getValue();
+        quantity[8] = (Integer) JSpinner9.getValue();
+        quantity[9] = (Integer) JSpinner10.getValue();
+        quantity[10] = (Integer) JSpinner11.getValue();
+        quantity[11] = (Integer) JSpinner12.getValue();
+        quantity[12] = (Integer) JSpinner13.getValue();
+        quantity[13] = (Integer) JSpinner14.getValue();
+        quantity[14] = (Integer) JSpinner15.getValue();
+        quantity[15] = (Integer) JSpinner16.getValue();
+        
+        Order order = new Order();
+        
+         for(int i=0; i<16; i++){
+           if(quantity[i]>0){
+               String data[]= {food_items[i], String.valueOf(price[i]), String.valueOf(quantity[i]), String.valueOf(price[i]*quantity[i])};
+               DefaultTableModel tblModel;
+               tblModel = (DefaultTableModel) order.ordertable.getModel();
+               tblModel.addRow(data);
+           } 
+        }        
+        
         order.setVisible(true);
     }//GEN-LAST:event_jButton27ActionPerformed
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
+        int quantity[] = new int[16];
+        String food_items[] = new String[16];
+        int price[] = new int[16];
+        
+        food_items[0] = "Nachos";
+        food_items[1] = "Dhokla";
+        food_items[2] = "Paneer Chilli";
+        food_items[3] = "Cheese Balls";
+        food_items[4] = "Pizza";
+        food_items[5] = "Pasta";
+        food_items[6] = "Tacos";
+        food_items[7] = "Burger";
+        food_items[8] = "Pancakes";
+        food_items[9] = "Cheesecake";
+        food_items[10] = "Waffle";
+        food_items[11] = "Rasgulla";
+        food_items[12] = "Lemonade";
+        food_items[13] = "Pinacolada";
+        food_items[14] = "Pepsi";
+        food_items[15] = "Milkshake";
+        
+        price[0] = 495;
+        price[1] = 250;
+        price[2] = 325;
+        price[3] = 280;
+        price[4] = 455;
+        price[5] = 435;
+        price[6] = 270;
+        price[7] = 165;
+        price[8] = 210;
+        price[9] = 260;
+        price[10] = 310;
+        price[11] = 145;
+        price[12] = 115;
+        price[13] = 120;
+        price[14] = 90;
+        price[15] = 160;        
+        
+        quantity[0] = (Integer) JSpinner1.getValue();
+        quantity[1] = (Integer) JSpinner2.getValue();
+        quantity[2] = (Integer) JSpinner3.getValue();
+        quantity[3] = (Integer) JSpinner4.getValue();
+        quantity[4] = (Integer) JSpinner5.getValue();
+        quantity[5] = (Integer) JSpinner6.getValue();
+        quantity[6] = (Integer) JSpinner7.getValue();
+        quantity[7] = (Integer) JSpinner8.getValue();
+        quantity[8] = (Integer) JSpinner9.getValue();
+        quantity[9] = (Integer) JSpinner10.getValue();
+        quantity[10] = (Integer) JSpinner11.getValue();
+        quantity[11] = (Integer) JSpinner12.getValue();
+        quantity[12] = (Integer) JSpinner13.getValue();
+        quantity[13] = (Integer) JSpinner14.getValue();
+        quantity[14] = (Integer) JSpinner15.getValue();
+        quantity[15] = (Integer) JSpinner16.getValue();
+        
         Order order = new Order();
+        
+         for(int i=0; i<16; i++){
+           if(quantity[i]>0){
+               String data[]= {food_items[i], String.valueOf(price[i]), String.valueOf(quantity[i]), String.valueOf(price[i]*quantity[i])};
+               DefaultTableModel tblModel;
+               tblModel = (DefaultTableModel) order.ordertable.getModel();
+               tblModel.addRow(data);
+           } 
+        }        
+        
         order.setVisible(true);
     }//GEN-LAST:event_jButton25ActionPerformed
     
