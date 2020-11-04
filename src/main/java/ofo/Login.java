@@ -156,7 +156,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Freestyle Script", 0, 60)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Catering your, feeding your cravings!");
+        jLabel6.setText("Catering your needs, feeding your cravings!");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -168,9 +168,9 @@ public class Login extends javax.swing.JFrame {
                         .addGap(93, 93, 93)
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 580, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(116, 116, 116)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 610, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
+                        .addGap(73, 73, 73)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 713, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -218,7 +218,7 @@ public class Login extends javax.swing.JFrame {
         Order.user = user;
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodorderingsystem?user=root&password=Dkj24/03");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/foodorderingsystem?user=root&password=chirag88");
             String sql = "Select username, password from user_table where username=? and password=?";
             PreparedStatement pstm = conn.prepareStatement(sql);
             pstm.setString(1, username.getText());
